@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Profil Pengguna | TanamKu
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="layout">
+   <aside class="sidebar">
+    <a class="brand" href="dashboard.html">
+     🌿 TanamKu
+     <small>
+      PLANT CARE JOURNAL
+     </small>
+    </a>
+    <nav class="nav">
+     <a class="" href="dashboard.html">
+      ⌂ &nbsp; Dashboard
+     </a>
+     <a class="" href="tanaman.html">
+      🪴 &nbsp; Data Tanaman
+     </a>
+     <a class="" href="jadwal.html">
+      ◷ &nbsp; Jadwal Perawatan
+     </a>
+     <a class="" href="laporan.html">
+      ▤ &nbsp; Rekap Laporan
+     </a>
+     <a class="active" href="profil.html">
+      ♙ &nbsp; Profil
+     </a>
+    </nav>
+    <a class="logout" href="index.html" onclick="localStorage.removeItem('tanamkuUser')">
+     &rarrhk; Logout
+    </a>
+   </aside>
+   <main class="main">
+    <header class="topbar">
+     <div>
+      <div class="eyebrow">
+       RAWAT TANAMAN DENGAN MUDAH
+      </div>
+      <h1>
+       Profil Pengguna
+      </h1>
+     </div>
+     <div class="avatar">
+      T
+     </div>
+    </header>
+    <section class="card">
+     <h2>
+      Informasi Profil
+     </h2>
+     <p class="muted">
+      Kelola informasi akun TanamKu.
+     </p>
+     <form id="profileForm">
+      <div class="form-grid">
+       <label>
+        Nama lengkap
+        <input id="profileName" value="Pengguna TanamKu"/>
+       </label>
+       <label>
+        Email
+        <input id="profileEmail" type="email" value="pengguna@email.com"/>
+       </label>
+      </div>
+      <button class="btn">
+       Simpan Profil
+      </button>
+     </form>
+    </section>
+    <section class="card">
+     <h2>
+      Keamanan Akun
+     </h2>
+     <form id="passwordForm">
+      <label>
+       Kata sandi baru
+       <input minlength="4" placeholder="Masukkan kata sandi baru" required="" type="password"/>
+      </label>
+      <label>
+       Ulangi kata sandi
+       <input minlength="4" placeholder="Ulangi kata sandi baru" required="" type="password"/>
+      </label>
+      <button class="btn secondary">
+       Ubah Kata Sandi
+      </button>
+     </form>
+    </section>
+   </main>
+  </div>
+  <script src="app.js">
+  </script>
+ </body>
+</html>
+

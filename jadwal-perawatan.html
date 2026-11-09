@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Jadwal Perawatan | TanamKu
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="layout">
+   <aside class="sidebar">
+    <a class="brand" href="dashboard.html">
+     🌿 TanamKu
+     <small>
+      PLANT CARE JOURNAL
+     </small>
+    </a>
+    <nav class="nav">
+     <a class="" href="dashboard.html">
+      ⌂ &nbsp; Dashboard
+     </a>
+     <a class="" href="tanaman.html">
+      🪴 &nbsp; Data Tanaman
+     </a>
+     <a class="active" href="jadwal.html">
+      ◷ &nbsp; Jadwal Perawatan
+     </a>
+     <a class="" href="laporan.html">
+      ▤ &nbsp; Rekap Laporan
+     </a>
+     <a class="" href="profil.html">
+      ♙ &nbsp; Profil
+     </a>
+    </nav>
+    <a class="logout" href="index.html" onclick="localStorage.removeItem('tanamkuUser')">
+     &rarrhk; Logout
+    </a>
+   </aside>
+   <main class="main">
+    <header class="topbar">
+     <div>
+      <div class="eyebrow">
+       RAWAT TANAMAN DENGAN MUDAH
+      </div>
+      <h1>
+       Jadwal Perawatan
+      </h1>
+     </div>
+     <div class="avatar">
+      T
+     </div>
+    </header>
+    <section class="card">
+     <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div>
+       <h2>
+        Daftar Jadwal
+       </h2>
+       <p class="muted">
+        Atur penyiraman, pemupukan, dan perawatan lainnya.
+       </p>
+      </div>
+      <a class="btn" href="#formJadwal">
+       ＋ Tambah Jadwal
+      </a>
+     </div>
+     <div class="table-wrap">
+      <table>
+       <thead>
+        <tr>
+         <th>
+          Tanaman
+         </th>
+         <th>
+          Jenis Perawatan
+         </th>
+         <th>
+          Tanggal
+         </th>
+         <th>
+          Catatan
+         </th>
+         <th>
+          Status
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          Monstera
+         </td>
+         <td>
+          Penyiraman
+         </td>
+         <td>
+          22 Okt 2026
+         </td>
+         <td>
+          Siram secukupnya
+         </td>
+         <td>
+          <span class="pill">
+           Menunggu
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Lidah Mertua
+         </td>
+         <td>
+          Pemupukan
+         </td>
+         <td>
+          23 Okt 2026
+         </td>
+         <td>
+          Pupuk organik
+         </td>
+         <td>
+          <span class="pill">
+           Terjadwal
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Anggrek
+         </td>
+         <td>
+          Penyiraman
+         </td>
+         <td>
+          24 Okt 2026
+         </td>
+         <td>
+          Periksa media tanam
+         </td>
+         <td>
+          <span class="pill">
+           Terjadwal
+          </span>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </section>
+    <section class="card" id="formJadwal">
+     <h2>
+      Tambah Jadwal Perawatan
+     </h2>
+     <form id="scheduleForm">
+      <div class="form-grid">
+       <label>
+        Nama tanaman
+        <input placeholder="Nama tanaman" required=""/>
+       </label>
+       <label>
+        Jenis perawatan
+        <select>
+         <option>
+          Penyiraman
+         </option>
+         <option>
+          Pemupukan
+         </option>
+         <option>
+          Pemangkasan
+         </option>
+         <option>
+          Ganti media tanam
+         </option>
+        </select>
+       </label>
+       <label>
+        Tanggal
+        <input required="" type="date"/>
+       </label>
+       <label>
+        Waktu
+        <input type="time"/>
+       </label>
+      </div>
+      <label>
+       Catatan
+       <textarea placeholder="Catatan perawatan" rows="2"></textarea>
+      </label>
+      <button class="btn">
+       Simpan Jadwal
+      </button>
+     </form>
+    </section>
+   </main>
+  </div>
+  <script src="app.js">
+  </script>
+ </body>
+</html>
+
