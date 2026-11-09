@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Rekap Laporan | TanamKu
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="layout">
+   <aside class="sidebar">
+    <a class="brand" href="dashboard.html">
+     🌿 TanamKu
+     <small>
+      PLANT CARE JOURNAL
+     </small>
+    </a>
+    <nav class="nav">
+     <a class="" href="dashboard.html">
+      ⌂ &nbsp; Dashboard
+     </a>
+     <a class="" href="tanaman.html">
+      🪴 &nbsp; Data Tanaman
+     </a>
+     <a class="" href="jadwal.html">
+      ◷ &nbsp; Jadwal Perawatan
+     </a>
+     <a class="active" href="laporan.html">
+      ▤ &nbsp; Rekap Laporan
+     </a>
+     <a class="" href="profil.html">
+      ♙ &nbsp; Profil
+     </a>
+    </nav>
+    <a class="logout" href="index.html" onclick="localStorage.removeItem('tanamkuUser')">
+     &rarrhk; Logout
+    </a>
+   </aside>
+   <main class="main">
+    <header class="topbar">
+     <div>
+      <div class="eyebrow">
+       RAWAT TANAMAN DENGAN MUDAH
+      </div>
+      <h1>
+       Rekap Laporan
+      </h1>
+     </div>
+     <div class="avatar">
+      T
+     </div>
+    </header>
+    <section class="grid">
+     <div class="card">
+      <div class="muted">
+       Jumlah koleksi
+      </div>
+      <div class="stat">
+       3
+      </div>
+     </div>
+     <div class="card">
+      <div class="muted">
+       Perawatan selesai
+      </div>
+      <div class="stat">
+       12
+      </div>
+     </div>
+     <div class="card">
+      <div class="muted">
+       Perawatan tertunda
+      </div>
+      <div class="stat">
+       2
+      </div>
+     </div>
+    </section>
+    <section class="card">
+     <h2>
+      Rekap Kondisi Tanaman
+     </h2>
+     <p class="muted">
+      Ringkasan kondisi tanaman yang tercatat.
+     </p>
+     <table>
+      <thead>
+       <tr>
+        <th>
+         Nama Tanaman
+        </th>
+        <th>
+         Kondisi
+        </th>
+        <th>
+         Lokasi
+        </th>
+        <th>
+         Catatan
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         Monstera
+        </td>
+        <td>
+         <span class="pill">
+          Sehat
+         </span>
+        </td>
+        <td>
+         Ruang tamu
+        </td>
+        <td>
+         Daun tumbuh baik
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Lidah Mertua
+        </td>
+        <td>
+         <span class="pill">
+          Sehat
+         </span>
+        </td>
+        <td>
+         Teras
+        </td>
+        <td>
+         Periksa kelembapan
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Anggrek
+        </td>
+        <td>
+         <span class="pill">
+          Sehat
+         </span>
+        </td>
+        <td>
+         Balkon
+        </td>
+        <td>
+         Perhatikan bunga
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <div class="actions">
+      <button class="btn" onclick="window.print()">
+       Cetak Laporan
+      </button>
+      <button class="btn secondary" id="exportCsv">
+       Ekspor CSV
+      </button>
+     </div>
+    </section>
+   </main>
+  </div>
+  <script src="app.js">
+  </script>
+ </body>
+</html>
+
